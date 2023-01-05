@@ -25,17 +25,17 @@ export default function Header({}: Props) {
             >
                 {/* Social Icons*/}
                 <SocialIcon
-                    url="https://github.com/richarten"
+                    url="https://github.com/faithvorite"
                     fgColor="gray"
                     bgColor="transparent"
                 />
                 <SocialIcon
-                    url="https://github.com/richarten"
+                    url="https://www.linkedin.com/in/faith-nguyen-7524a6245/"
                     fgColor="gray"
                     bgColor="transparent"
                 />
                 <SocialIcon
-                    url="https://github.com/richarten"
+                    url="https://faithnguyenart.vercel.app"
                     fgColor="gray"
                     bgColor="transparent"
                 />
