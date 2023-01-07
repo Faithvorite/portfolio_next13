@@ -42,7 +42,7 @@ export default function Header({}: Props) {
                 />
             </motion.div>
 
-            <Link href="#contact">
+            
             <motion.div
                 initial={{
                     x: 500,
@@ -60,16 +60,18 @@ export default function Header({}: Props) {
                 className="flex flex-row items-center text-gray-300 cursor-pointer"
             >
                 <SocialIcon
+                href="#contact"
                     className="cursor-pointer"
                     network="email"
                     fgColor="gray"
                     bgColor="transparent"
                 />
+                <Link href="#contact">
                 <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
                     Let us connect.
                 </p>
-            </motion.div>
             </Link>
+            </motion.div>
         </header>
     );
 }

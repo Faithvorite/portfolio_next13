@@ -21,7 +21,7 @@ function Hero({}: Props) {
 
     <Image src={mePic}
     alt="profile pic"
-    className="relative rounded-full h-[100px] w-[100px] mx-auto object-cover"
+    className="relative rounded-full h-[200px] w-[200px] mx-auto object-cover"
     
     />
    <div className="z-20">
