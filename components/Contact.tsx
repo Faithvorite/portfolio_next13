@@ -20,16 +20,18 @@ function Contact({}: Props) {
 
   return (
     <div className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-    <h3 className='absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl'>
+    <h3 className='md:absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl'>
             Contact
         </h3>
 
-        <div className='flex flex-col space-y-10'>
-            <h4 className='text-4xl font-semibold text-center'>
-                I have just what you need. <span className='decoration-green-100/50 underline'>Let us talk.</span> 
+        <div className='flex flex-col md:flex-row space-y-10 md:space-x-10 max-w-full justify-evenly mx-auto items-center'>
+            <div>
+                
+            <h4 className='text-4xl font-semibold text-center p-5'>
+                <span className='decoration-green-100/50 underline'>Let us talk.</span> 
             </h4>
 
-            <div>
+            <div className='flex flex-col space-y-5 max-w-full'>
                 <div className='flex items-center space-x-5 justify-center'>
                     <PhoneIcon className='text-green-500 h-7 w-7 animate-pulse'/>
                     <p>+12323412</p>
@@ -42,6 +44,7 @@ function Contact({}: Props) {
                     <MapPinIcon className='text-green-500 h-7 w-7 animate-pulse' />
                     <p>Austin, TX</p>
                 </div>
+            </div>
             </div>
 
             <form 
