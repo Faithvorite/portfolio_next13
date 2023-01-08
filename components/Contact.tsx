@@ -49,8 +49,8 @@ function Contact({}: Props) {
 
             <form 
              onSubmit={handleSubmit(onSubmit)}
-             className='flex flex-col space-y-2 w-full mx-auto p-[5px] pr-[15px]'>
-                <div className='flex space-x-2'>
+             className='flex flex-col space-y-2 w-full mx-auto px-2'>
+                <div className='flex space-y-2 flex-col sm:flex-row sm:space-x-2 sm:space-y-0'>
                     <input {...register('name')} placeholder="Name" className='contactInput' type="text" />
                     <input {...register('email')} placeholder="Email" className='contactInput' type="email" />
                 </div>
