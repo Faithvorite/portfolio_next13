@@ -6,7 +6,7 @@ type Props = {}
 
 function About({}: Props) {
   return (
-    <div className='lg:px-36 xl:px-56'>
+    <div className='lg:px-36 xl:px-56 min-h-[500px] '>
 
     <motion.div 
       initial={{ opacity: 0 }}
