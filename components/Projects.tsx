@@ -7,14 +7,14 @@ function Projects({}: Props) {
 
   return (
     <div className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 '>
-        <h3 className='md:absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl'>
+        <h3 className='md:absolute top-28 uppercase tracking-[15px] text-gray-500 text-2xl'>
             Projects
         </h3>
 
-        <div className='relative w-11/12 h-4/5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-green-700/80 mb-[15px] p-5 xl:px-[25px]'>
+        <div className='relative w-11/12 h-11/12 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(107,43,43)]/80 mb-[15px] p-5 xl:px-[25px]'>
             {/* projects */}
             {projects.map((project, i)=> (
-                <div key={i} className='lg:flex-row w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-5'>
+                <div key={i} className='lg:flex-row w-screen flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center px-5'>
                     <motion.img
                         initial={{
                             y:0,
@@ -33,7 +33,7 @@ function Projects({}: Props) {
                        />
                     <div className='space-y-5 px-0 md:px-10 max-w-6xl'>
                         <h4 className='text-3xl xl:text-4xl font-semibold text-center'>
-                            <span className='underline decoration-green-300'>Case Study {i + 1} of {projects.length}</span>: UPS clone
+                            <span className='underline decoration-[rgb(107,43,43)]'>Case Study {i + 1} of {projects.length}</span>: UPS clone
                         </h4>
 
                         <p className='text-lg text-center md:text-left'>
@@ -43,7 +43,7 @@ function Projects({}: Props) {
                 </div>
             ))}
         </div>
-        <div className='w-full absolute top-[30%] bg-gray-50/10 left-0 h-[300px] -skew-y-12'></div>
+        <div className='w-full absolute top-[30%] bg-[rgb(107,43,43)]/10 left-0 h-[300px] -skew-y-12'></div>
     </div>
   )
 }

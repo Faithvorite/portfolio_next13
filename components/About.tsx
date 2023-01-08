@@ -36,7 +36,7 @@ function About({}: Props) {
         />
 
         <div className='space-y-10 px-0 md:px-10'>
-            <h4 className='text-2xl lg:text-4xl font-semibold'>Here is a <span className='underline decoration-green-50/50'>little</span> background</h4>
+            <h4 className='text-2xl lg:text-4xl font-semibold'>A <span className='underline decoration-[rgb(107,43,43)]/50'>little</span> background</h4>
             <p className='text-base px-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda repellendus numquam repudiandae tempore eaque vel libero sed, temporibus eveniet laudantium. Tempore ducimus laborum magnam quo molestiae animi atque nemo!</p>
         </div>
             </motion.div>

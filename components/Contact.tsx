@@ -19,29 +19,29 @@ function Contact({}: Props) {
     }
 
   return (
-    <div className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-    <h3 className='md:absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl'>
+    <div className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 '>
+    <h3 className='md:absolute top-24  uppercase tracking-[15px] text-gray-500 text-2xl'>
             Contact
         </h3>
 
-        <div className='flex flex-col md:flex-row space-y-10 md:space-x-10 max-w-full justify-evenly mx-auto items-center'>
+        <div className='flex flex-col md:flex-row space-y-10 xs:space-y-5 md:space-x-10 max-w-full justify-evenly mx-auto items-center'>
             <div>
                 
-            <h4 className='text-4xl font-semibold text-center p-5'>
-                <span className='decoration-green-100/50 underline'>Let us talk.</span> 
+            <h4 className='text-4xl font-semibold text-center pb-5'>
+                <span className='decoration-[rgb(107,43,43)]/50 underline'>Let us talk.</span> 
             </h4>
 
-            <div className='flex flex-col space-y-5 max-w-full'>
+            <div className='flex flex-col space-y-2 max-w-full'>
                 <div className='flex items-center space-x-5 justify-center'>
-                    <PhoneIcon className='text-green-500 h-7 w-7 animate-pulse'/>
+                    <PhoneIcon className='text-[rgb(107,43,43)] h-7 w-7 animate-pulse'/>
                     <p>+12323412</p>
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
-                    <EnvelopeIcon className='text-green-500 h-7 w-7 animate-pulse'/>
+                    <EnvelopeIcon className='text-[rgb(107,43,43)] h-7 w-7 animate-pulse'/>
                     <p>faithrnguyen@gmail.com</p>
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
-                    <MapPinIcon className='text-green-500 h-7 w-7 animate-pulse' />
+                    <MapPinIcon className='text-[rgb(107,43,43)] h-7 w-7 animate-pulse' />
                     <p>Austin, TX</p>
                 </div>
             </div>
@@ -57,7 +57,7 @@ function Contact({}: Props) {
 
                 <input {...register('subject')} placeholder="Subject" className='contactInput' type='text' />
                 <textarea {...register('message')} placeholder="Message" className='contactInput'/>
-                <button type="submit" className='bg-green-500 py-5 px-10 rounded-md text-black font-bold text-lg'>Submit</button>
+                <button type="submit" className='bg-[rgb(107,43,43)] py-2 sm:py-5 px-10 rounded-md text-black font-bold text-lg'>Submit</button>
             </form>
         </div>
 
