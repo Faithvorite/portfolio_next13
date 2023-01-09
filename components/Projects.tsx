@@ -3,7 +3,29 @@ import { motion } from 'framer-motion';
 type Props = {}
 
 function Projects({}: Props) {
-    const projects = [1,2,3,4,5];
+   const projects = [
+    {
+        id: 1,
+        title: "Modern Blog",
+        stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
+        img: "https://cdn.dribbble.com/userupload/4253479/file/original-917b64e2c8c52f700a68fde5568e243c.png?compress=1&resize=1024x768",
+        description: "lorem"
+    },
+    {
+        id: 1,
+        title: "Modern Blog",
+        stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
+        img: "https://cdn.dribbble.com/userupload/4253479/file/original-917b64e2c8c52f700a68fde5568e243c.png?compress=1&resize=1024x768",
+        description: "lorem"
+    },
+    {
+        id: 1,
+        title: "Modern Blog",
+        stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
+        img: "https://cdn.dribbble.com/userupload/4253479/file/original-917b64e2c8c52f700a68fde5568e243c.png?compress=1&resize=1024x768",
+        description: "lorem"
+    },
+        2,3,4,5];
 
   return (
     <div className='h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 '>
@@ -11,10 +33,10 @@ function Projects({}: Props) {
             Projects
         </h3>
 
-        <div className='relative w-11/12 h-11/12 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(107,43,43)]/80 mb-[15px] p-5 xl:px-[25px]'>
+        <div className='relative w-full h-11/12 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(107,43,43)]/80 mb-[15px] p-5 '>
             {/* projects */}
-            {projects.map((project, i)=> (
-                <div key={i} className='lg:flex-row w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-5'>
+            {projects.map((item, i)=> (
+                <div key={i} className='lg:flex-row w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-24'>
                     <motion.img
                         initial={{
                             y:0,
@@ -28,12 +50,12 @@ function Projects({}: Props) {
                     //    transition={{ duration: 1.2 }}
                     //    whileInView={{ opacity: 1, y: 0}}
                     //    viewport={{ once: true }}
-                       src="https://miro.medium.com/max/786/1*NqRJpS6XN-DIlOjUlfM-WQ.webp"
+                       src={item.img}
                        className='xs:max-w-[400px] md:max-w-[400px] lg:max-w-[500px]'
                        />
                     <div className='space-y-5 px-0 md:px-10 max-w-6xl'>
                         <h4 className='text-3xl xl:text-4xl font-semibold text-center'>
-                            <span className='underline decoration-[rgb(107,43,43)]'>Case Study {i + 1} of {projects.length}</span>: UPS clone
+                            <span className='underline decoration-[rgb(107,43,43)]'>{item.title} Case Study {i + 1} of {projects.length}</span>: UPS clone
                         </h4>
 
                         <p className='text-lg text-center md:text-left '>
