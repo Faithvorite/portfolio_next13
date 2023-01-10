@@ -12,7 +12,7 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='flex flex-col relative h-screen md:space-x-5 text-center md:text-left md:flex-row max-w-7xl px-5 justify-evenly mx-auto items-center'>
+      className='flex flex-col relative h-screen md:space-x-5 text-center md:text-left md:flex-row max-w-7xl px-5 sm:px-10 justify-evenly mx-auto items-center'>
         <h3 className='md:absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>About</h3>
         
         <motion.img
