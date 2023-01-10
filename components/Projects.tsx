@@ -42,7 +42,7 @@ function Projects({}: Props) {
 ];
 
   return (
-    <div className='h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 '>
+    <div className='h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 py-5'>
         <h3 className='md:absolute top-28 uppercase tracking-[15px] text-gray-500 text-2xl'>
             Projects
         </h3>
@@ -75,7 +75,7 @@ function Projects({}: Props) {
                         <p className='text-lg text-center md:text-left '>
                             {project.description} 
                         </p>
-                        <p className='text-xs text-gray-500'>Case Study {i + 1} of {projects.length}</p>
+                        <p className='text-xs text-gray-500 pb-5'>Case Study {i + 1} of {projects.length}</p>
                     </div>
                 </div>
             ))}

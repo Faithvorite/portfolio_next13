@@ -12,7 +12,7 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='flex flex-col relative h-screen md:space-x-5 text-center md:text-left md:flex-row max-w-7xl px-5 sm:px-10 justify-evenly mx-auto items-center'>
+      className='flex flex-col relative h-screen md:space-x-5 text-center md:text-left md:flex-row max-w-7xl px-5 sm:px-10 justify-evenly mx-auto items-center py-5'>
         <h3 className='md:absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>About</h3>
         
         <motion.img
@@ -27,9 +27,9 @@ function About({}: Props) {
             opacity: 1,
             x:0,
         }}
-        // viewport={{
-            //     once: true,
-            // }}
+        viewport={{
+                once: true,
+            }}
         src="https://media.licdn.com/dms/image/C5603AQGBsFBC9ZJAwA/profile-displayphoto-shrink_800_800/0/1663455980451?e=1678320000&v=beta&t=LG-dob0BXjR-C8xh-8roo8qsFZIV8POPWJ5e_v-Evz4"
         alt="profile pic"
         className="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-80"
