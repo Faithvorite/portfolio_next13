@@ -9,23 +9,37 @@ function Projects({}: Props) {
         title: "Modern Blog",
         stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
         img: "https://cdn.dribbble.com/userupload/4253479/file/original-917b64e2c8c52f700a68fde5568e243c.png?compress=1&resize=1024x768",
+        description: "Fully responsive blog. Static and Dynamic data handling, preview mode with Sanity v.3, "
+    },
+    {
+        id: 2,
+        title: "Modern Blog",
+        stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
+        img: "https://cdn.dribbble.com/userupload/4262070/file/original-9079888940f90226cc8b0396895c9c82.png?compress=1&resize=1024x768",
         description: "lorem"
     },
     {
-        id: 1,
+        id: 3,
         title: "Modern Blog",
         stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
-        img: "https://cdn.dribbble.com/userupload/4253479/file/original-917b64e2c8c52f700a68fde5568e243c.png?compress=1&resize=1024x768",
+        img: "https://cdn.dribbble.com/userupload/4221657/file/original-47c6fe97504f4a60f4392c7ce183453f.png?compress=1&resize=1024x576",
         description: "lorem"
     },
     {
-        id: 1,
+        id: 4,
         title: "Modern Blog",
         stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
-        img: "https://cdn.dribbble.com/userupload/4253479/file/original-917b64e2c8c52f700a68fde5568e243c.png?compress=1&resize=1024x768",
+        img: "https://cdn.dribbble.com/userupload/4221657/file/original-47c6fe97504f4a60f4392c7ce183453f.png?compress=1&resize=1024x576",
         description: "lorem"
     },
-        2,3,4,5];
+    {
+        id: 5,
+        title: "Modern Blog",
+        stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
+        img: "https://cdn.dribbble.com/userupload/4221657/file/original-47c6fe97504f4a60f4392c7ce183453f.png?compress=1&resize=1024x576",
+        description: "lorem"
+    },
+];
 
   return (
     <div className='h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 '>
@@ -35,7 +49,7 @@ function Projects({}: Props) {
 
         <div className='relative w-full h-11/12 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(107,43,43)]/80 mb-[15px] p-5 '>
             {/* projects */}
-            {projects.map((item, i)=> (
+            {projects.map((project, i)=> (
                 <div key={i} className='lg:flex-row w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-24'>
                     <motion.img
                         initial={{
@@ -50,17 +64,18 @@ function Projects({}: Props) {
                     //    transition={{ duration: 1.2 }}
                     //    whileInView={{ opacity: 1, y: 0}}
                     //    viewport={{ once: true }}
-                       src={item.img}
-                       className='xs:max-w-[400px] md:max-w-[400px] lg:max-w-[500px]'
+                       src={project.img}
+                       className='xs:max-w-[400px] md:max-w-[400px] lg:max-w-[500px] max-h-[400px]'
                        />
                     <div className='space-y-5 px-0 md:px-10 max-w-6xl'>
-                        <h4 className='text-3xl xl:text-4xl font-semibold text-center'>
-                            <span className='underline decoration-[rgb(107,43,43)]'>{item.title} Case Study {i + 1} of {projects.length}</span>: UPS clone
+                        <h4 className='text-xl xl:text-xl font-light text-center flex flex-col'>
+                            <span className='text-4xl uppercase font-bolder pb-2 tracking-widest underline decoration-[rgb(107,43,43)]'>{project.title}</span> {project.stack}
                         </h4>
 
                         <p className='text-lg text-center md:text-left '>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid iste enim nulla ab soluta laborum. Quibusdam, rem accusamus. Debitis nihil, sit ad saepe voluptatibus tempora natus praesentium enim sed! Nemo.
+                            {project.description} 
                         </p>
+                        <p className='text-xs text-gray-500'>Case Study {i + 1} of {projects.length}</p>
                     </div>
                 </div>
             ))}
