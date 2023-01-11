@@ -11,11 +11,11 @@ function About({}: Props) {
     <motion.div 
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1 }}
       viewport={{
         once: true,
     }}
-      className='flex flex-col relative h-screen md:space-x-5 text-center md:text-left md:flex-row max-w-7xl px-5 sm:px-10 justify-evenly mx-auto items-center py-10'>
+      className='flex flex-col relative h-screen md:space-x-5 text-center md:text-left md:flex-row max-w-7xl px-5 sm:px-10 justify-evenly mx-auto items-center py-10 '>
         <h3 className='md:absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>About</h3>
         
         <motion.img
@@ -39,9 +39,11 @@ function About({}: Props) {
         />
 
         <div className='space-y-10 px-0 md:px-10 '>
-            <h4 className='text-2xl lg:text-4xl tracking-widest font-semibold'>A <span className='underline decoration-[rgb(107,43,43)]/50'>little</span> background...</h4>
+            <h4 className='text-2xl lg:text-4xl tracking-widest font-semibold'>A little background...</h4>
             <p className='text-lg px-5'>I graduated Cum Laude from UT Austin, with a B.S. in English and minor in Creative Writing. While English and art have long been my outlets for expression, in 2021 I began studying web development as well. Despite changes in my career path, my goal in life has remained the same - to better my ability to create and communicate.</p>
+            <hr className='w-48 h-0.5 mx-auto my-4 border-0 rounded md:my-10 bg-[rgb(107,43,43)]/50'/>
         </div>
+        <div className='w-full absolute top-[30%] bg-[rgb(107,43,43)]/10 left-0 h-[300px] -skew-y-12 -z-20'></div>
             </motion.div>
             </div>
   )
