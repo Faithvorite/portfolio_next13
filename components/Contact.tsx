@@ -23,10 +23,14 @@ function Contact({}: Props) {
     <h3 className='md:absolute top-24  uppercase tracking-[15px] text-gray-500 text-2xl'>
             Contact
         </h3>
-
-        <div className='flex flex-col md:flex-row space-y-10 xs:space-y-5 md:space-x-10 max-w-full justify-evenly mx-auto items-center'>
-            <div>
-                
+        {/* <img 
+            className='absolute h-1/2 w-90 rounded-full z-0 left-0 opacity-20'
+            src="https://i.imgur.com/XbHhV15.png"
+            alt="profile pic"
+            /> */}
+        <div className='relative flex flex-col md:flex-row space-y-10 xs:space-y-5 md:space-x-10 max-w-full justify-evenly mx-auto items-center'>
+        
+        <div className='z-20'>
             <h4 className='text-4xl font-semibold text-center pb-5'>
                 <span className='decoration-[rgb(107,43,43)]/50 underline'>Let us talk.</span> 
             </h4>
@@ -45,11 +49,11 @@ function Contact({}: Props) {
                     <p>Austin, TX</p>
                 </div>
             </div>
-            </div>
+        </div>
 
             <form 
              onSubmit={handleSubmit(onSubmit)}
-             className='flex flex-col space-y-2 w-full mx-auto px-2'>
+             className='flex flex-col space-y-2 w-full mx-auto px-2 z-20'>
                 <div className='flex space-y-2 flex-col sm:flex-row sm:space-x-2 sm:space-y-0'>
                     <input {...register('name')} placeholder="Name" className='contactInput' type="text" />
                     <input {...register('email')} placeholder="Email" className='contactInput' type="email" />

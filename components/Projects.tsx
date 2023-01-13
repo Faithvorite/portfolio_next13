@@ -9,20 +9,21 @@ function Projects({}: Props) {
    const projects = [
     {
         id: 1,
-        title: "Modern Blog",
-        stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
-        img: "https://cdn.dribbble.com/userupload/4253479/file/original-917b64e2c8c52f700a68fde5568e243c.png?compress=1&resize=1024x768",
-        description: "Fully responsive blog. Static and Dynamic data handling, preview mode with Sanity v.3, ",
-        url: "",
+       title: "E-Commerce Art Site",
+        stack: "NEXT.js | MongoDB | Axios | ",
+        img: "https://i.imgur.com/SQJgpm7.png",
+        description: "Full stack e-commerce site with admin dashboard and PayPal integration. Fully responsive with framer motion animation.",
+        url: "https://faithnguyenart.vercel.app/",
         git:""
     },
     {
         id: 2,
-        title: "E-Commerce Art Site",
-        stack: "NEXT.js | MongoDB | Axios | ",
-        img: "https://cdn.dribbble.com/userupload/4262070/file/original-9079888940f90226cc8b0396895c9c82.png?compress=1&resize=1024x768",
-        description: "Full stack e-commerce site with admin dashboard and PayPal integration. Fully responsive with framer motion animation.",
-        url: "https://faithnguyenart.vercel.app/",
+        
+         title: "Modern Blog",
+        stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
+        img: "https://i.imgur.com/GC3SlNH.png",
+        description: "Fully responsive blog. Static and Dynamic data handling, preview mode and studio with Sanity v.3, ",
+        url: "https://faithnguyenblog.vercel.app/",
         git:""
     },
     {
@@ -45,11 +46,11 @@ function Projects({}: Props) {
     },
     {
         id: 5,
-        title: "Modern Blog",
+        title: "META Messenger clone",
         stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
         img: "https://cdn.dribbble.com/userupload/4221657/file/original-47c6fe97504f4a60f4392c7ce183453f.png?compress=1&resize=1024x576",
         description: "lorem",
-        url: "",
+        url: "https://my-meta-messenger.vercel.app/",
         git:""
     },
 ];
@@ -90,8 +91,8 @@ function Projects({}: Props) {
                         </p>
                         
                         
-                        <p className='text-xs text-gray-500 pb-5 flex justify-between'>Case Study {i + 1} of {projects.length} 
-                        <Link href={project.url} className='group text-right uppercase text-xs items-center flex flex-row space-x-2 hover:text-black duration-300'>
+                        <p className='text-xs text-gray-500 pb-5 flex justify-between items-center'>Case Study {i + 1} of {projects.length} 
+                        <Link href={project.url} className='group text-right uppercase text-xs items-center flex flex-row space-x-2 hover:text-black duration-300 tracking-widest'>
                         Come visit<ArrowRightIcon className="h-6 w-6 pl-2 group-hover:-rotate-45"/>
                         </Link></p>
                     </div>
