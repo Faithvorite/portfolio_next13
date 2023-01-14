@@ -13,7 +13,7 @@ function Projects({}: Props) {
         stack: "NEXT.js | MongoDB | Axios | ",
         img: "https://i.imgur.com/SQJgpm7.png",
         img2: "https://i.imgur.com/HQMebwS.png",
-        description: "Full stack e-commerce site with admin dashboard and PayPal integration. Fully responsive with framer motion animation.",
+        description: "My personal art portfolio. Full stack e-commerce site with an admin dashboard and PayPal integration. Fully responsive with Framer Motion animation.",
         url: "https://faithnguyenart.vercel.app/",
         git:""
     },
@@ -32,10 +32,10 @@ function Projects({}: Props) {
     {
         id: 3,
         title: "Meta Messenger App clone",
-        stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
+        stack: "NEXT.js 13 | Upstash | TypeScript | Tailwind CSS",
         img: "https://i.imgur.com/o8ZG7RG.png",
-        description: "lorem",
-        url: "",
+        description: "Real time messenger app using Upstash, Pusher, and Redis. Pub/Sub backend enabling real-time sync.",
+        url: "https://my-meta-messenger.vercel.app/",
         git:""
     },
     {
