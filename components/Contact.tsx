@@ -51,6 +51,13 @@ function Contact({}: Props) {
                     <MapPinIcon className='text-[rgb(107,43,43)] h-7 w-7 animate-pulse' />
                     <p>Austin, TX</p>
                 </div>
+                <div className='items-center space-x-5 justify-center hidden sm:flex'>
+                        <img 
+                        className='h-10 w-10 rounded-full'
+                        src="https://i.imgur.com/XbHhV15.png"
+                        alt="profile pic"
+                        />
+                </div>
             </div>
         </div>
 
