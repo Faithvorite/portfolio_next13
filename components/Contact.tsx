@@ -1,6 +1,9 @@
 import React from 'react'
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid"
 import {useForm, SubmitHandler } from "react-hook-form"
+import Link from 'next/link'
+import { SocialIcon } from 'react-social-icons'
+import { motion } from 'framer-motion'
 
 type Props = {}
 
@@ -61,10 +64,73 @@ function Contact({}: Props) {
 
                 <input {...register('subject')} placeholder="Subject" className='contactInput' type='text' />
                 <textarea {...register('message')} placeholder="Message" className='contactInput'/>
-                <button type="submit" className='bg-[rgb(107,43,43)] py-2 sm:py-5 px-10 rounded-md text-black font-bold text-lg'>Submit</button>
+                <button type="submit" className='bg-[rgb(107,43,43)]/70 hover:bg-[rgb(107,43,43)] py-2 sm:py-5 px-10 rounded-md text-white font-bold text-lg uppercase tracking-widest'>Submit</button>
             </form>
-        </div>
 
+            <footer className='flex sticky bottom-5 w-fit right-0 cursor-pointer sm:hidden'>
+
+                <motion.div
+                     initial={{
+                    x: -500,
+                    opacity: 0,
+                    scale: 0.5,
+                    }}
+                    animate={{
+                    x: 0,
+                    opacity: 1,
+                    scale: 1,
+                    }}
+                    transition={{
+                    duration: 1.5,
+                    }}
+                    className="flex flex-row items-center"
+                >
+                    {/* Social Icons*/}
+                    <SocialIcon
+                        url="https://github.com/faithvorite"
+                        fgColor="gray"
+                        bgColor="transparent"
+                    />
+                    <SocialIcon
+                        url="https://www.linkedin.com/in/faith-nguyen-7524a6245/"
+                        fgColor="gray"
+                        bgColor="transparent"
+                    />
+                    <SocialIcon
+                        url="https://faithnguyenart.vercel.app"
+                        fgColor="gray"
+                        bgColor="transparent"
+                    />
+                </motion.div>
+
+                <motion.div
+                    initial={{
+                        x: 500,
+                        opacity: 0,
+                        scale: 0.5,
+                    }}
+                    animate={{
+                        x: 0,
+                        opacity: 1,
+                        scale: 1,
+                    }}
+                    transition={{
+                        duration: 1.5,
+                    }}
+                    className="flex flex-row items-center text-gray-300 cursor-pointer"
+                >
+             
+                    <div className=' px-5'>
+                        <img 
+                        className='h-10 w-10 rounded-full filter-none sm:filter grayscale hover:grayscale-0 cursor-pointer'
+                        src="https://i.imgur.com/XbHhV15.png"
+                        alt="profile pic"
+                        />
+                    </div>
+            </motion.div>
+        </footer>
+        </div>
+        
     </div>
   )
 }

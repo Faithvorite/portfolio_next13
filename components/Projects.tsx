@@ -84,7 +84,7 @@ function Projects({}: Props) {
                     //    whileInView={{ opacity: 1, y: 0}}
                     //    viewport={{ once: true }}
                     src={project.img}
-                       className=' sm:max-w-[400px] lg:max-w-[500px] max-h-[400px] lg:pb-14'
+                       className=' sm:max-w-[400px] lg:max-w-[500px] max-h-[300px] md:max-h-[450px] lg:pb-14'
                        />
                     </Link>
                 
@@ -99,7 +99,7 @@ function Projects({}: Props) {
                         
                         
                         <p className='text-xs text-gray-500 pb-5 flex justify-between items-center'>Case Study {i + 1} of {projects.length} 
-                        <Link href={project.url} className='group text-right uppercase text-xs items-center flex flex-row space-x-2 hover:text-black duration-300 tracking-widest'>
+                        <Link href={project.url} className='group text-right uppercase text-xs items-center flex flex-row space-x-2 hover:text-white duration-300 tracking-widest'>
                         Come visit<ArrowRightIcon className="h-6 w-6 pl-2 group-hover:-rotate-45"/>
                         </Link></p>
                     </div>
