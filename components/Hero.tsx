@@ -8,9 +8,9 @@ type Props = {}
 function Hero({}: Props) {
     const [text, count] = useTypewriter({
         words: [
-            "<Web Developer />",
-            "<UX Designer />",
-            "<Artist Writer Coder />"
+            "<WebDeveloper />",
+            "<UXDesigner />",
+            "<ArtistWriterCoder />"
         ],
         loop: true,
         delaySpeed: 2000,

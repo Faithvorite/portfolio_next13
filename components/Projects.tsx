@@ -15,7 +15,7 @@ function Projects({}: Props) {
         img2: "https://i.imgur.com/HQMebwS.png",
         description: "My personal art portfolio. Full stack e-commerce site with an admin dashboard and PayPal integration. Fully responsive with Framer Motion animation.",
         url: "https://faithnguyenart.vercel.app/",
-        git:""
+        git:"https://github.com/Faithvorite/nextjspersonalwebsite"
     },
     {
         id: 2,
@@ -24,10 +24,9 @@ function Projects({}: Props) {
         stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
         img: "https://i.imgur.com/2CKj8q3.png",
         img2: "https://i.imgur.com/eQ6RWhw.png",
-
         description: "Fully responsive blog. Static and Dynamic data handling, preview mode and studio with Sanity v.3, ",
         url: "https://faithnguyenblog.vercel.app/",
-        git:""
+        git:"https://github.com/Faithvorite/next13_blog_app"
     },
     {
         id: 3,
@@ -36,16 +35,16 @@ function Projects({}: Props) {
         img: "https://i.imgur.com/o8ZG7RG.png",
         description: "Real time messenger app using Upstash, Pusher, and Redis. Pub/Sub backend enabling real-time sync.",
         url: "https://my-meta-messenger.vercel.app/",
-        git:""
+        git:"https://github.com/Faithvorite/meta-messenger"
     },
     {
         id: 4,
-        title: "live news app ",
-        stack: "NEXT.js 13 | TypeScript | StepZen | Tailwind CSS | Dark Mode | GraphQL",
-        img: "https://cdn.dribbble.com/userupload/4221657/file/original-47c6fe97504f4a60f4392c7ce183453f.png?compress=1&resize=1024x576",
-        description: "lorem",
-        url: "",
-        git:""
+        title: "Live News App ",
+        stack: "NEXT.js 13 | TypeScript | StepZen | GraphQL | Tailwind CSS | Light/Dark Mode ",
+        img: "https://i.imgur.com/h9PAqLq.png",
+        description: "Live News App with Dynamic and Static data handling. Categories and search bar. Live news pulled optimally from Mediastack API. Responsive design and light/dark mode with Tailwind.",
+        url: "https://nguyennews.vercel.app/",
+        git:"https://github.com/Faithvorite/news_next13"
     },
     {
         id: 5,
@@ -88,7 +87,7 @@ function Projects({}: Props) {
                        />
                     </Link>
                 
-                    <div className='space-y-5 lg:py-7 md:mx-14 xl:mx-28'>
+                    <div className='space-y-6 lg:py-7 md:mx-14 xl:mx-28'>
                         <h4 className='text-xl xl:text-xl font-light text-center flex flex-col'>
                             <span className='text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
                         </h4>
@@ -98,10 +97,22 @@ function Projects({}: Props) {
                         </p>
                         
                         
-                        <p className='text-xs text-gray-500 pb-5 flex justify-between items-center'>Case Study {i + 1} of {projects.length} 
-                        <Link href={project.url} className='group text-right uppercase text-xs items-center flex flex-row space-x-2 hover:text-white duration-300 tracking-widest'>
-                        Come visit<ArrowRightIcon className="h-6 w-6 pl-2 group-hover:-rotate-45"/>
-                        </Link></p>
+                        <div className='text-xs text-gray-500 pb-5 flex justify-between items-center '>
+                        <div className='text-sm items-center flex'>
+                            <p>
+                                CASE STUDY {i + 1} of {projects.length} 
+                                </p>
+                                <SocialIcon
+                            url={project.git}
+                            fgColor="gray"
+                            bgColor="transparent"
+                        /> 
+                        </div>
+                        
+                        <Link href={project.url} className='group text-right uppercase text-xs items-center flex flex-row space-x-2 hover:text-black duration-300 tracking-widest'>
+                        Come visit<ArrowRightIcon className="h-6 w-6 pl-2 group-hover:scale-110"/>
+                        </Link>
+                        </div>
                     </div>
                 </div>
             ))}
