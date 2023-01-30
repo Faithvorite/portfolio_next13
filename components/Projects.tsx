@@ -48,12 +48,12 @@ function Projects({}: Props) {
     },
     {
         id: 5,
-        title: "META Messenger clone",
-        stack: "NEXT.js 13 | Sanity | TypeScript | Tailwind CSS",
-        img: "https://cdn.dribbble.com/userupload/4221657/file/original-47c6fe97504f4a60f4392c7ce183453f.png?compress=1&resize=1024x576",
-        description: "lorem",
-        url: "https://my-meta-messenger.vercel.app/",
-        git:""
+        title: "DALLE-2.0 Clone",
+        stack: "MERN stack | Tailwind CSS | Cloudinary",
+        img: "https://i.imgur.com/VUTK2jx.png",
+        description: "Full stack MERN AI Image Generation App",
+        url: "https://dalle-clone-mern-nu.vercel.app/",
+        git:"https://github.com/Faithvorite/dalle_clone_mern"
     },
 ];
 
