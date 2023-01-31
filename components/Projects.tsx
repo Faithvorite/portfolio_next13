@@ -58,15 +58,15 @@ function Projects({}: Props) {
 ];
 
   return (
-    <div className='h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left lg:flex-row max-w-full justify-evenly mx-auto items-center z-0 py-10'>
+    <div className=' h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left lg:flex-row max-w-full justify-evenly mx-auto items-center z-0 py-10 bg-gradient-to-b from-[rgb(107,43,43)]/0 via-[rgb(107,43,43)]/50 to-[rgb(107,43,43)]/0'>
         <h3 className='lg:absolute top-28 uppercase tracking-[15px] text-gray-500 text-2xl'>
             Projects
         </h3>
 
-        <div className='relative w-full h-11/12 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(107,43,43)]/80 mb-[15px] px-5 '>
+        <div className='relative w-full h-11/12 flex overflow-x-scroll overflow-y-hidden  z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(107,43,43)]/80 mb-[15px] px-5 '>
             {/* projects */}
             {projects.map((project, i)=> (
-                <div key={i} className='lg:flex-row w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-24 bg-gradient-to-b from-[rgb(107,43,43)]/40 '>
+                <div key={i} className='lg:flex-row w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-24  '>
                     <Link href={project.url} className="z-20">
 
                     <motion.img
@@ -88,8 +88,8 @@ function Projects({}: Props) {
                     </Link>
                 
                     <div className='space-y-6 lg:py-7 md:mx-14 xl:mx-28'>
-                        <h4 className='text-xl xl:text-xl font-light text-center flex flex-col'>
-                            <span className='text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
+                        <h4 className='text-gray-800 text-xl xl:text-xl font-light text-center flex flex-col'>
+                            <span className=' text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
                         </h4>
 
                         <p className='text-lg text-center'>
