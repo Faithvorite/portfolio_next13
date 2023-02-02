@@ -43,9 +43,9 @@ export default function Home() {
       <Projects />
       </section> 
 
-      {/* <section id="education" className='snap-center'>
+      <section id="education" className='snap-center'>
       <WorkExperience />
-    </section> */}
+    </section>
     <section id="contact" className='sm:snap-center'>
       <Contact />
     </section>

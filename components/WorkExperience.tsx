@@ -7,6 +7,16 @@ function WorkExperience({}: Props) {
   const educationInfo=[
     { 
       id: 1,
+      title: "CS50",
+      uni: "Harvard",
+      img: "https://camo.githubusercontent.com/e102fc78838d08dc4d36cec7006a3cf89cbd397892588b6ed16d33af0f374255/68747470733a2f2f676f6f2e676c2f6d4a774e5543",
+      stack: ["https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",],
+      period: "2021",
+      summary: ["Familiarity with a number of languages, including C, Python, SQL, and JavaScript plus CSS and HTML", "Concepts like abstraction, algorithms, data structures, encapsulation, resource management, and security", "How to think algorithmically and solve programming problems efficiently"],
+
+    },
+    { 
+      id: 2,
       title: "Introductory JavaScript",
       uni: "Scrimba",
       img: "https://scrimba.com/static/art/scrimba-og-image.png",
@@ -16,7 +26,7 @@ function WorkExperience({}: Props) {
 
     },
     { 
-      id: 2,
+      id: 3,
       title: "JavaScript Algorithms and Data Structures | Front End Development Libraries Cerification",
       uni: "freeCodeCamp",
       img: "https://i.pcmag.com/imagery/reviews/01tPXClg2WjLamQzScplH3y-15.fit_scale.size_760x427.v1627670281.png",
@@ -25,20 +35,21 @@ function WorkExperience({}: Props) {
       summary: ["More than 200 lessons completed", "Learned the fundamentals of JavaScript and React"],
 
     },
-    {    id: 3,
-    title: "TExtbook",
-    uni: "freeCodeCamp",
-    img: "https://scrimba.com/static/art/scrimba-og-image.png",
-    stack: ["https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png", "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"],
+    {    id: 4,
+    title: "JavaScript Definitive Guide Textbook",
+    uni: "David Flanagan",
+    img: "https://i.imgur.com/7xi09mV.jpg",
+    stack: ["https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+  ],
     period: "2021",
     summary: ["172 Lessons, 8 hours and 21 minutes", "Learned the fundamentals of JavaScript", "Built passenger counter app, Blackjack game,  and Chrome Extension, "],
 
   },
-  {    id: 4,
+  {    id: 5,
     title: "30 Projects in 1 Month",
     uni: "JS30",
     img: "https://javascript30.com/images/JS3-social-share.png",
-    stack: ["https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png", "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"],
+    stack: ["https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",],
     period: "2021",
     summary: ["Built 30 vanilla JavaScript projects in one month", "Worked with DOM, interface, audio and video", "No frameworks or libraries, just browser APIs"],
 

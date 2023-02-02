@@ -7,6 +7,7 @@ type Props = {}
 
 function Projects({}: Props) {
    const projects = [
+    
     {
         id: 1,
        title: "E-Commerce Art Site",
