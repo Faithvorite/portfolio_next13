@@ -58,7 +58,7 @@ function Projects({}: Props) {
 ];
 
   return (
-    <div className=' h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left lg:flex-row max-w-full justify-evenly mx-auto items-center z-0 py-10 bg-gradient-to-b from-[rgb(107,43,43)]/0 via-[rgb(107,43,43)]/50 to-[rgb(107,43,43)]/0'>
+    <div className=' h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left lg:flex-row max-w-full justify-evenly mx-auto items-center z-0 py-10 bg-gradient-to-t from-[rgb(107,43,43)]/70'>
         <h3 className='lg:absolute top-28 uppercase tracking-[15px] text-gray-500 text-2xl'>
             Projects
         </h3>
