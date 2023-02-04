@@ -68,7 +68,7 @@ function Projects({}: Props) {
             {/* projects */}
             {projects.map((project, i)=> (
                 <div key={i} className='lg:flex-row w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-24  '>
-                    <Link href={project.url} className="z-20">
+                    <Link target="_blank" href={project.url} className="z-20">
 
                     <motion.img
                         initial={{
