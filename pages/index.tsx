@@ -42,10 +42,10 @@ export default function Home() {
     <section id="projects" className='sm:snap-center'>
       <Projects />
       </section> 
-
+{/* 
       <section id="education" className='snap-center'>
       <WorkExperience />
-    </section>
+    </section> */}
     <section id="contact" className='sm:snap-center'>
       <Contact />
     </section>
