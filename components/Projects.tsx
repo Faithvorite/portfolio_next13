@@ -59,15 +59,15 @@ function Projects({}: Props) {
 ];
 
   return (
-    <div className=' h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left lg:flex-row max-w-full justify-evenly mx-auto items-center z-0 py-10 bg-gradient-to-t from-[rgb(107,43,43)]/70'>
-        <h3 className='lg:absolute top-28 uppercase tracking-[15px] text-gray-500 text-2xl'>
+    <div className=' h-screen min-h-[500px] relative flex overflow-hidden flex-col text-left lg:flex-row max-w-full justify-evenly mx-auto items-center z-0 py-4 sm:py-10 bg-gradient-to-b from-[rgb(107,43,43)]/0 via-[rgb(107,43,43)]/30 to-[rgb(107,43,43)]/0'>
+        <h3 className='lg:absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl'>
             Projects
         </h3>
 
-        <div className='relative w-full h-11/12 flex overflow-x-scroll overflow-y-hidden  z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(107,43,43)]/80 mb-[15px] px-5 '>
+        <div className='relative w-full h-11/12 flex overflow-x-scroll overflow-y-hidden snap-x z-20 scrollbar scrollbar-track-white/60 scrollbar-thumb-[rgb(107,43,43)]/80 px-5 '>
             {/* projects */}
             {projects.map((project, i)=> (
-                <div key={i} className='lg:flex-row w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-24  '>
+                <div key={i} className='lg:flex-row   w-5/6 flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center mx-2 sm:mx-12 xl:mx-24 px-6 mb-4 sm:mb-10 bg-slate-100 '>
                     <Link target="_blank" href={project.url} className="z-20">
 
                     <motion.img
@@ -84,21 +84,21 @@ function Projects({}: Props) {
                     //    whileInView={{ opacity: 1, y: 0}}
                     //    viewport={{ once: true }}
                     src={project.img}
-                       className=' sm:max-w-[400px] lg:max-w-[500px] max-h-[300px] md:max-h-[450px] lg:pb-14'
+                       className='shadow-xl hover:shadow-2xl sm:max-w-[400px] lg:max-w-[500px] max-h-[300px] md:max-h-[450px] sm:m-4 lg:pb-14'
                        />
                     </Link>
                 
-                    <div className='space-y-6 lg:py-7 md:mx-14 xl:mx-28'>
+                    <div className='space-y-4 lg:py-7 md:mx-14 xl:mx-28'>
                         <h4 className='text-gray-800 text-xl xl:text-xl font-light text-center flex flex-col'>
-                            <span className=' text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
+                            <span className=' text-2xl md:text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
                         </h4>
 
-                        <p className='text-lg text-center'>
+                        <p className='text-md sm:text-lg text-center'>
                             {project.description} 
                         </p>
                         
                         
-                        <div className='text-xs text-gray-500 pb-5 flex justify-between items-center '>
+                        <div className='text-xs text-gray-500 flex justify-between items-center '>
                         <div className='text-sm items-center flex'>
                             <p>
                                 CASE STUDY {i + 1} of {projects.length} 

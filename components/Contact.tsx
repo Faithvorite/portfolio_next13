@@ -74,7 +74,7 @@ function Contact({}: Props) {
                 <button type="submit" className='bg-[rgb(107,43,43)]/70 hover:bg-[rgb(107,43,43)] py-2 sm:py-5 px-10 rounded-md text-white font-bold text-lg uppercase tracking-widest'>Submit</button>
             </form>
 
-            <footer className='flex sticky bottom-5 w-fit right-0 cursor-pointer sm:hidden'>
+            {/* <footer className='flex sticky bottom-5 w-fit right-0 cursor-pointer sm:hidden'>
 
                 <motion.div
                      initial={{
@@ -91,9 +91,9 @@ function Contact({}: Props) {
                     duration: 1.5,
                     }}
                     className="flex flex-row items-center"
-                >
+                > */}
                     {/* Social Icons*/}
-                    <SocialIcon
+                    {/* <SocialIcon
                         url="https://github.com/faithvorite"
                         fgColor="gray"
                         bgColor="transparent"
@@ -135,7 +135,7 @@ function Contact({}: Props) {
                         />
                     </div>
             </motion.div>
-        </footer>
+        </footer> */}
         </div>
         
     </div>
