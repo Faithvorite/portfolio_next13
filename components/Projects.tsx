@@ -109,9 +109,9 @@ function Projects({}: Props) {
                         
                         <div className='text-xs text-gray-500 flex justify-between items-center '>
                         <div className='text-sm items-center flex'>
-                            <p>
+                            {/* <p>
                                 CASE STUDY {i + 1} of {projects.length} 
-                                </p>
+                                </p> */}
                                 <SocialIcon
                             url={project.git}
                             fgColor="gray"
