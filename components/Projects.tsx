@@ -119,7 +119,7 @@ function Projects({}: Props) {
                         /> 
                         </div>
                         
-                        <Link href={project.url} className='group text-right uppercase text-xs items-center flex flex-row space-x-2 hover:text-black duration-300 tracking-widest'>
+                        <Link href={project.url} target="_blank" className='group text-right uppercase text-xs items-center flex flex-row space-x-2 hover:text-black duration-300 tracking-widest'>
                         Come visit<ArrowRightIcon className="h-6 w-6 pl-2 group-hover:scale-110"/>
                         </Link>
                         </div>
