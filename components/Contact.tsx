@@ -34,7 +34,7 @@ function Contact({}: Props) {
         <div className='relative flex flex-col md:flex-row space-y-10 xs:space-y-5 md:space-x-10 max-w-full justify-evenly mx-auto items-center'>
         
         <div className='z-20'>
-            <h4 className='text-2xl sm:text-4xl font-semibold text-center pb-5'>
+            <h4 className='text-2xl tracking-widest sm:text-4xl font-semibold text-center pb-5'>
                 <span className='decoration-[rgb(107,43,43)]/50 underline'>Let us talk.</span> 
             </h4>
 

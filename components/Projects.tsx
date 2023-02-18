@@ -33,7 +33,7 @@ function Projects({}: Props) {
         id: 3,
         title: "Meta Messenger App clone",
         stack: "NEXT.js 13 | Upstash | TypeScript | Tailwind CSS",
-        img: "https://i.imgur.com/o8ZG7RG.png",
+        img: "https://i.imgur.com/9C1AU4b.png",
         description: "Real time messenger app using Upstash, Pusher, and Redis. Pub/Sub backend enabling real-time sync.",
         url: "https://my-meta-messenger.vercel.app/",
         git:"https://github.com/Faithvorite/meta-messenger"
@@ -99,7 +99,7 @@ function Projects({}: Props) {
                 
                     <div className='space-y-4 lg:py-7 md:mx-14 xl:mx-28'>
                         <h4 className='text-gray-800 text-xl xl:text-xl font-light text-center flex flex-col'>
-                            <span className=' text-2xl md:text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
+                            <span className=' text-2xl sm:text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
                         </h4>
 
                         <p className='text-md sm:text-lg text-center'>
