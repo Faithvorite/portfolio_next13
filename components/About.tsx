@@ -43,7 +43,7 @@ function About({}: Props) {
             <p className='text-lg px-5 '>I graduated Cum Laude from UT Austin, with a B.S. in English and minor in Creative Writing. While English and art have long been my outlets for expression, in 2021 I began studying web development as well. Despite changes in my career path, my goal in life has remained the same - to better my ability to create and communicate.</p>
             <hr className='w-48 h-1 mx-auto my-4 border-0 rounded md:my-10 bg-[rgb(107,43,43)]/50'/>
         </div>
-        <div className='w-full absolute top-[30%] bg-[rgb(107,43,43)]/10 left-0 h-[300px] -skew-y-12 -z-20'></div>
+        <div className='w-full absolute top-[30%] bg-[rgb(107,43,43)]/20 left-0 h-[300px] -skew-y-12 -z-20'></div>
             </motion.div>
             </div>
   )

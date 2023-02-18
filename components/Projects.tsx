@@ -56,6 +56,15 @@ function Projects({}: Props) {
         url: "https://dalle-clone-mern-nu.vercel.app/",
         git:"https://github.com/Faithvorite/dalle_clone_mern"
     },
+       {
+        id: 6,
+        title: "Book Search",
+        stack: "React | Tailwind CSS | Open Library API",
+        img: "https://i.imgur.com/WVoznQ2.png",
+        description: "Book search site with Open Library API. Colorful and responsive design.",
+        url: "https://book-search-react.vercel.app/",
+        git:"https://github.com/Faithvorite/dalle_clone_mern"
+    },
 ];
 
   return (
