@@ -14,7 +14,7 @@ function Projects({}: Props) {
         stack: "NEXT.js | MongoDB | Axios",
         img: "https://i.imgur.com/SQJgpm7.png",
         img2: "https://i.imgur.com/HQMebwS.png",
-        description: "My personal art portfolio. Full stack e-commerce site with an admin dashboard and PayPal integration. Fully responsive with Framer Motion animation.",
+        description: "Full stack e-commerce site with an admin dashboard and PayPal integration. Fully responsive with Framer Motion animation.",
         url: "https://faithnguyenart.vercel.app/",
         git:"https://github.com/Faithvorite/nextjspersonalwebsite"
     },
@@ -43,7 +43,7 @@ function Projects({}: Props) {
         title: "Live News",
         stack: "NEXT.js 13 | TypeScript | GraphQL | Tailwind CSS",
         img: "https://i.imgur.com/h9PAqLq.png",
-        description: "Live News App with Dynamic and Static data handling. Categories and search bar. Live news pulled optimally from Mediastack API. Responsive design and light/dark mode with Tailwind.",
+        description: "Live News App with Dynamic and Static data handling. Categories and search bar. Responsive design and light/dark mode with Tailwind.",
         url: "https://nguyennews.vercel.app/",
         git:"https://github.com/Faithvorite/news_next13"
     },
@@ -62,7 +62,7 @@ function Projects({}: Props) {
         stack: "React | Tailwind CSS | Open Library API",
         img: "https://i.imgur.com/WVoznQ2.png",
         description: "Book search site with Open Library API. Colorful and responsive design.",
-        url: "https://book-search-react.vercel.app/",
+        url: "https://bookclubsearch.vercel.app/",
         git:"https://github.com/Faithvorite/dalle_clone_mern"
     },
 ];
