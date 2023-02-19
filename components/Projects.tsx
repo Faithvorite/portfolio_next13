@@ -99,7 +99,7 @@ function Projects({}: Props) {
                 
                     <div className='space-y-4 lg:py-7 md:mx-14 xl:mx-28'>
                         <h4 className='text-gray-800 text-xl xl:text-xl font-light text-center flex flex-col'>
-                            <span className=' text-2xl sm:text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
+                            <span className=' text-2xl lg:text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
                         </h4>
 
                         <p className='text-md sm:text-lg text-center'>
