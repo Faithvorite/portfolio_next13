@@ -11,7 +11,7 @@ function Projects({}: Props) {
     {
         id: 1,
        title: "E-Commerce Art",
-        stack: "NEXT.js | MongoDB | Axios | ",
+        stack: "NEXT.js | MongoDB | Axios",
         img: "https://i.imgur.com/SQJgpm7.png",
         img2: "https://i.imgur.com/HQMebwS.png",
         description: "My personal art portfolio. Full stack e-commerce site with an admin dashboard and PayPal integration. Fully responsive with Framer Motion animation.",
@@ -41,7 +41,7 @@ function Projects({}: Props) {
     {
         id: 4,
         title: "Live News",
-        stack: "NEXT.js 13 | TypeScript | StepZen | GraphQL | Tailwind CSS | Light/Dark Mode ",
+        stack: "NEXT.js 13 | TypeScript | StepZen | GraphQL | Tailwind CSS",
         img: "https://i.imgur.com/h9PAqLq.png",
         description: "Live News App with Dynamic and Static data handling. Categories and search bar. Live news pulled optimally from Mediastack API. Responsive design and light/dark mode with Tailwind.",
         url: "https://nguyennews.vercel.app/",
@@ -97,7 +97,7 @@ function Projects({}: Props) {
                        />
                     </Link>
                 
-                    <div className='space-y-4 lg:py-7 md:mx-14 xl:mx-28'>
+                    <div className='space-y-2 lg:py-7 md:mx-14 xl:mx-28'>
                         <h4 className='text-gray-800 text-xl xl:text-xl font-light text-center flex flex-col'>
                             <span className=' text-2xl lg:text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
                         </h4>
