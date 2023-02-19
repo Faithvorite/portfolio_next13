@@ -10,7 +10,7 @@ function Projects({}: Props) {
     
     {
         id: 1,
-       title: "E-Commerce Art Site",
+       title: "E-Commerce Art",
         stack: "NEXT.js | MongoDB | Axios | ",
         img: "https://i.imgur.com/SQJgpm7.png",
         img2: "https://i.imgur.com/HQMebwS.png",
@@ -31,7 +31,7 @@ function Projects({}: Props) {
     },
     {
         id: 3,
-        title: "Meta Messenger App clone",
+        title: "Meta Messenger",
         stack: "NEXT.js 13 | Upstash | TypeScript | Tailwind CSS",
         img: "https://i.imgur.com/9C1AU4b.png",
         description: "Real time messenger app using Upstash, Pusher, and Redis. Pub/Sub backend enabling real-time sync.",
@@ -40,7 +40,7 @@ function Projects({}: Props) {
     },
     {
         id: 4,
-        title: "Live News App ",
+        title: "Live News",
         stack: "NEXT.js 13 | TypeScript | StepZen | GraphQL | Tailwind CSS | Light/Dark Mode ",
         img: "https://i.imgur.com/h9PAqLq.png",
         description: "Live News App with Dynamic and Static data handling. Categories and search bar. Live news pulled optimally from Mediastack API. Responsive design and light/dark mode with Tailwind.",
@@ -49,7 +49,7 @@ function Projects({}: Props) {
     },
     {
         id: 5,
-        title: "DALLE-2.0 Clone",
+        title: "DALLE-2.0",
         stack: "MERN stack | Tailwind CSS | Cloudinary",
         img: "https://i.imgur.com/VUTK2jx.png",
         description: "Full stack MERN AI Image Generation App",
