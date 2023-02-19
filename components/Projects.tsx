@@ -76,7 +76,7 @@ function Projects({}: Props) {
         <div className='relative w-full h-11/12 flex overflow-x-scroll overflow-y-hidden snap-x z-20 scrollbar scrollbar-track-white/60 scrollbar-thumb-[rgb(107,43,43)]/80 px-5 '>
             {/* projects */}
             {projects.map((project, i)=> (
-                <div key={i} className='lg:flex-row w-11/12 flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center mx-2 sm:mx-12 xl:mx-24 px-2 sm:px-4 mb-4 sm:mb-10 bg-slate-100 '>
+                <div key={i} className='lg:flex-row w-11/12 flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center mx-2 sm:mx-12 xl:mx-24 p-2 sm:p-4 mb-4 sm:mb-10 bg-slate-100 '>
                     <Link target="_blank" href={project.url} className="z-20">
 
                     <motion.img
@@ -93,12 +93,12 @@ function Projects({}: Props) {
                     //    whileInView={{ opacity: 1, y: 0}}
                     //    viewport={{ once: true }}
                     src={project.img}
-                       className='shadow-xl hover:shadow-2xl sm:max-w-[400px] lg:max-w-[500px] max-h-[300px] md:max-h-[450px] sm:m-4 lg:pb-14'
+                       className='shadow-xl hover:shadow-2xl sm:max-w-[400px] lg:max-w-[500px] max-h-[300px] md:max-h-[450px] m-2 sm:m-4 lg:pb-14'
                        />
                     </Link>
                 
                     <div className='space-y-2 lg:py-7 md:mx-14 xl:mx-28'>
-                        <h4 className='text-gray-800 text-xl xl:text-xl font-light text-center flex flex-col'>
+                        <h4 className='text-gray-800 text-sm xl:text-xl font-light text-center flex flex-col'>
                             <span className=' text-2xl lg:text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
                         </h4>
 
