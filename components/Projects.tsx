@@ -41,7 +41,7 @@ function Projects({}: Props) {
     {
         id: 4,
         title: "Live News",
-        stack: "NEXT.js 13 | TypeScript | StepZen | GraphQL | Tailwind CSS",
+        stack: "NEXT.js 13 | TypeScript | GraphQL | Tailwind CSS",
         img: "https://i.imgur.com/h9PAqLq.png",
         description: "Live News App with Dynamic and Static data handling. Categories and search bar. Live news pulled optimally from Mediastack API. Responsive design and light/dark mode with Tailwind.",
         url: "https://nguyennews.vercel.app/",
@@ -93,7 +93,7 @@ function Projects({}: Props) {
                     //    whileInView={{ opacity: 1, y: 0}}
                     //    viewport={{ once: true }}
                     src={project.img}
-                       className='shadow-xl hover:shadow-2xl sm:max-w-[400px] lg:max-w-[500px] max-h-[300px] md:max-h-[450px] m-2 sm:m-4 lg:pb-14'
+                       className='shadow-xl hover:shadow-2xl sm:max-w-[400px] lg:max-w-[500px] max-h-[300px] md:max-h-[450px] sm:m-4 lg:pb-14'
                        />
                     </Link>
                 
