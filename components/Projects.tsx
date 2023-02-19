@@ -102,7 +102,7 @@ function Projects({}: Props) {
                             <span className=' text-2xl lg:text-4xl uppercase font-semibold pb-2 tracking-widest'>{project.title}</span> {project.stack}
                         </h4>
 
-                        <p className='text-md sm:text-lg text-center'>
+                        <p className='text-md sm:text-lg text-center text-black'>
                             {project.description} 
                         </p>
                         
