@@ -73,10 +73,10 @@ function Projects({}: Props) {
             Projects
         </h3>
 
-        <div className='relative w-full h-11/12 flex overflow-x-scroll overflow-y-hidden snap-x z-20 scrollbar scrollbar-track-white/60 scrollbar-thumb-[rgb(107,43,43)]/80 px-5 '>
+        <div className='relative w-full h-11/12 lg:h-9/12 flex overflow-x-scroll overflow-y-hidden snap-x z-20 scrollbar scrollbar-track-white/60 scrollbar-thumb-[rgb(107,43,43)]/80 px-5 '>
             {/* projects */}
             {projects.map((project, i)=> (
-                <div key={i} className='lg:flex-row w-11/12 lg:w-4/6 lg:h-3/6 flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center mx-2 sm:mx-12 xl:mx-24 p-2 sm:p-4 mb-4 sm:mb-10 bg-slate-100 '>
+                <div key={i} className='lg:flex-row w-11/12 lg:w-9/12 flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center mx-2 sm:mx-12 xl:mx-24 p-2 sm:p-4 mb-4 sm:mb-10 bg-slate-100 '>
                     <Link target="_blank" href={project.url} className="z-20">
 
                     <motion.img
