@@ -33,7 +33,7 @@ function About({}: Props) {
         viewport={{
                 once: true,
             }}
-        src="https://media.licdn.com/dms/image/C5603AQGBsFBC9ZJAwA/profile-displayphoto-shrink_800_800/0/1663455980451?e=1678320000&v=beta&t=LG-dob0BXjR-C8xh-8roo8qsFZIV8POPWJ5e_v-Evz4"
+        src="https://i.imgur.com/TvNJGQk.jpg"
         alt="profile pic"
         className=" md:mb-0 flex-shrink-0 w-40 h-40 my-10 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-80"
         />
