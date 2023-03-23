@@ -29,15 +29,15 @@ function Projects({}: Props) {
         url: "https://faithnguyenblog.vercel.app/",
         git:"https://github.com/Faithvorite/next13_blog_app"
     },
-    {
-        id: 3,
-        title: "Meta Messenger",
-        stack: "NEXT.js 13 | Upstash | TypeScript | Tailwind CSS",
-        img: "https://i.imgur.com/9C1AU4b.png",
-        description: "Real time messenger app using Upstash, Pusher, and Redis. Pub/Sub backend enabling real-time sync.",
-        url: "https://my-meta-messenger.vercel.app/",
-        git:"https://github.com/Faithvorite/meta-messenger"
-    },
+    // {
+    //     id: 3,
+    //     title: "Meta Messenger",
+    //     stack: "NEXT.js 13 | Upstash | TypeScript | Tailwind CSS",
+    //     img: "https://i.imgur.com/9C1AU4b.png",
+    //     description: "Real time messenger app using Upstash, Pusher, and Redis. Pub/Sub backend enabling real-time sync.",
+    //     url: "https://my-meta-messenger.vercel.app/",
+    //     git:"https://github.com/Faithvorite/meta-messenger"
+    // },
     {
         id: 4,
         title: "Live News",
@@ -57,7 +57,7 @@ function Projects({}: Props) {
         git:"https://github.com/Faithvorite/dalle_clone_mern"
     },
        {
-        id: 6,
+        id: 3,
         title: "Book Search",
         stack: "React | Tailwind CSS | Open Library API",
         img: "https://i.imgur.com/WVoznQ2.png",
