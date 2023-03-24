@@ -39,6 +39,15 @@ function Projects({}: Props) {
     //     git:"https://github.com/Faithvorite/meta-messenger"
     // },
     {
+        id: 3,
+        title: "Book Search",
+        stack: "React | Tailwind CSS | Open Library API",
+        img: "https://i.imgur.com/WVoznQ2.png",
+        description: "Book search site with Open Library API. Colorful and responsive design.",
+        url: "https://bookclubsearch.vercel.app/",
+        git:"https://github.com/Faithvorite/dalle_clone_mern"
+    },
+    {
         id: 4,
         title: "Live News",
         stack: "NEXT.js 13 | TypeScript | GraphQL | Tailwind CSS",
@@ -56,15 +65,7 @@ function Projects({}: Props) {
         url: "https://dalle-clone-mern-nu.vercel.app/",
         git:"https://github.com/Faithvorite/dalle_clone_mern"
     },
-       {
-        id: 3,
-        title: "Book Search",
-        stack: "React | Tailwind CSS | Open Library API",
-        img: "https://i.imgur.com/WVoznQ2.png",
-        description: "Book search site with Open Library API. Colorful and responsive design.",
-        url: "https://bookclubsearch.vercel.app/",
-        git:"https://github.com/Faithvorite/dalle_clone_mern"
-    },
+    
 ];
 
   return (
